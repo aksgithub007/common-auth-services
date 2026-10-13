@@ -19,5 +19,12 @@
   "devDependencies": {
     "del-cli": "^8.0.1",
     "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "@types/express": "^5.0.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "express": "^5.3.0",
+    "express-validator": "^7.3.2",
+    "jsonwebtoken": "^9.0.3"
   }
 }
