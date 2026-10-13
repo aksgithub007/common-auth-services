@@ -1,6 +1,5 @@
 import { Request, Response, NextFunction } from "express";
 import jwt from "jsonwebtoken";
-import { UnAuthorizedError } from "../error/unAuthorizedError";
 
 interface UserPayload {
   id: string;
@@ -11,6 +10,9 @@ declare global {
   namespace Express {
     interface Request {
       currentUser?: UserPayload;
+      session?: {
+        token?: string;
+      };
     }
   }
 }
